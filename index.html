@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISAL Store - Top Up Diamond Mobile Legends</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>ISAL Store</h1>
+            <p>Top Up Diamond Mobile Legends</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Top Up</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="diamond-options">
+        <h2>Pilih Diamond</h2>
+        <div class="diamond-option">
+            <h3>100 Diamond</h3>
+            <p>Harga: Rp 10.000</p>
+            <button onclick="addToCart('100 Diamond', 10000)">Tambah ke Keranjang</button>
+        </div>
+        <div class="diamond-option">
+            <h3>200 Diamond</h3>
+            <p>Harga: Rp 20.000</p>
+            <button onclick="addToCart('200 Diamond', 20000)">Tambah ke Keranjang</button>
+        </div>
+        <div class="diamond-option">
+            <h3>500 Diamond</h3>
+            <p>Harga: Rp 50.000</p>
+            <button onclick="addToCart('500 Diamond', 50000)">Tambah ke Keranjang</button>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Keranjang</h2>
+        <div id="cart-items">
+            <p>Belum ada barang di keranjang.</p>
+        </div>
+        <button id="checkout-btn" onclick="checkout()">Lanjutkan ke Pembayaran</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ISAL Store. Semua hak cipta dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
